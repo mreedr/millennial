@@ -1,0 +1,21 @@
+<% layout('layout') -%>
+
+<div class="row">
+	<div class="large-3 large-centered columns">
+		<form action="/upvote/<%= article.slug %>" method="post">
+			<button type="submit">Up Vote</button>
+		</form>
+		<h4>The Millenial</h4>
+		<form action="/downvote/<%= article.slug %>" method="post">
+			<button type="submit">Down Vote</button>
+		</form>
+
+		<p>Title: <%= article.title %></p>
+		<p>Up:    <%= article.upvotes %></p>
+		<p>Down:  <%= article.downvotes %></p>
+
+	</div>
+</div>
+
+<!-- <script src="/javascripts/vote.js"></script> -->
+

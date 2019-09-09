@@ -1,0 +1,30 @@
+<% layout('layout') -%>
+
+<p>You can add an article from here</p>
+<!--
+		title: { type: String, required: true, unique: true },
+		url: { type: String, required: true, unique: true },
+		upvotes: { type: Number },
+		downvotes: {type: Number } -->
+
+<form action="/add" method="post">
+  <fieldset>
+    <legend>Fieldset</legend>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <label>Title</label>
+        <input type="text" placeholder="title" name="title">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <label>Slug</label>
+        <input type="text" placeholder="slug" name="slug">
+      </div>
+    </div>
+
+  <button type="submit">Submit</button>
+  </fieldset>
+</form>
